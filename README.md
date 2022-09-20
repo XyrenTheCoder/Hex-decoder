@@ -1,6 +1,10 @@
 # Hex decoder
 A simple Hexadecimal string decoder using C++ strtol.
 
+## Content
+- file: output will be saved inside output.txt.
+- instant: output can be viewed instantly after decoding.
+
 ## Format
 Hex value must NOT be grouped.
 
