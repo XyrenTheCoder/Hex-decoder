@@ -1,5 +1,5 @@
 # Hex decoder
-A simple Hexadecimal string decoder.
+A simple Hexadecimal string decoder using C++ strtol.
 
 ## Format
 Hex value must NOT be grouped.
