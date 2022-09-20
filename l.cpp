@@ -2,6 +2,7 @@
 
 int main()
 {
+    std::cout << "input hex value: ";
     std::string hex;
     std::cin >> hex;
     int len = hex.length();
@@ -12,6 +13,7 @@ int main()
         char chr = (char) (int)strtol(byte.c_str(), 0, 16);
         o.push_back(chr);
     }
+    std::cout << "output:" << std::endl;
     std::cout << o;
     return 0;
 }
