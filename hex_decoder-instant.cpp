@@ -16,8 +16,5 @@ int main()
     }
     std::cout << "output:" << std::endl;
     std::cout << o;
-    //std::ofstream file("RunMe.cpp");
-    //file << o;
-    //file.close();
     return 0;
 }
