@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 
 int main()
 {
@@ -13,7 +14,11 @@ int main()
         char chr = (char) (int)strtol(byte.c_str(), 0, 16);
         o.push_back(chr);
     }
-    std::cout << "output:" << std::endl;
-    std::cout << o;
+    //std::cout << "output:" << std::endl;
+    //std::cout << o;
+    std::ofstream file("output.txt");
+    file << o;
+    file.close();
+    std::cout << "Convert success! Read output.txt for actual output." << std::endl;
     return 0;
 }
