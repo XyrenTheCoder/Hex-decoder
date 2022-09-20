@@ -14,9 +14,14 @@ int main()
         char chr = (char) (int)strtol(byte.c_str(), 0, 16);
         o.push_back(chr);
     }
-    std::ofstream file("output.txt");
+
+    std::ofstream file("output.cpp");
     file << o;
     file.close();
-    std::cout << "Convert success! Read output.txt for actual output." << std::endl;
+
+    std::string str = "gcc -o a.out output.cpp";
+    const char *command = str.c_str();
+    system(command)
+    system("./a.out")
     return 0;
 }
